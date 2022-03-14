@@ -1,17 +1,14 @@
+//a1739139
+
 #ifndef HUMAN_H
 #define HUMAN_H
-#include "Referee.h"
-#include <iostream>
-#include <stdlib.h>
-using namespace std;
 
 class Human
 {
-    public:
-        Human();
-        string move();
-        char setMove();
-        char getMove();
-
+public:
+    Human(); //constructor
+    //input character to make a move for human player
+    char makeMove();
 };
-#endif //Human_h
+
+#endif

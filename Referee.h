@@ -1,15 +1,16 @@
+//a1739139
+
 #ifndef REFEREE_H
 #define REFEREE_H
 #include "Computer.h"
 #include "Human.h"
-#include <iostream>
-//Inheritance of the Human and the Computer class.
-class referee
-{
 
+class Referee
+{
 public:
-	//Function to interact between the human and computer and gives the outcome of the game.
-	void set_result();
-	std::string H_input;
+    Referee(); //constructor
+    char refGame(Human p1, Computer p2);
+    // returns the outcome for player1:  'W', 'L' or 'T' (Win, Lose, Tie)
 };
+
 #endif

@@ -1,20 +1,23 @@
+//a1739139
+
 #include "Human.h"
 #include <iostream>
 using namespace std;
-//Inputs the move variable.
-//size variable uses the first element entered in the move and subtract it with the ascii value of 0.
-int Human::Human()
+
+Human::Human() 
 {
-	getline(cin,move);
-	int size=move[0]-'0';
 }
-//returns the size.
-int Human::get_size()
+
+char Human::makeMove()
 {
-	return size;
-}
+    char p1;
+//input rock,paper or scissors initials to make move
+    cout << "Enter move: \n";
+    cin >> p1;
 //returns the move.
-string Human::get_move()
-{
-	return move;
+    return p1;
 }
+
+
+
+

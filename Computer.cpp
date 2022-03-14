@@ -1,10 +1,18 @@
+//a1739139
 
 #include "Computer.h"
 #include <iostream>
 using namespace std;
-char Computer::get_move_computer()
+
+Computer::Computer()
 {
-	//Computer plays only scissors and has been set to scissors in this case.
-	input='S';
+}
+
+char Computer::makeMove()
+{
+	//Computer plays only rock and has been set to rock in this case.
+	char input= 'R';
 	return input;
 }
+
+

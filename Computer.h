@@ -1,11 +1,14 @@
+//a1739139
+
 #ifndef COMPUTER_H
 #define COMPUTER_H
+
 class Computer
 {
-	//Input variable for the computer
-	char input;
 public:
-	//Function used to set and return the input of the computer.
-	char get_move_computer();
+    Computer(); //constructor
+    //Character to input move of the computer
+    char makeMove();
 };
-#endif //COMPUTER_H
+
+#endif
